@@ -1,0 +1,219 @@
+body{
+    font-family: sans-serif;
+ background-image: linear-gradient(to right, #8B8ABB, #8AC59D);
+}
+  img{
+    width: 60px;
+    height: 60px;
+  }
+  .container{
+    display: grid ;
+    
+  
+  }
+  .container__box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+    gap: 15px;
+  }
+  .container .container__box .box{
+    background: #a89b9b;
+    border-radius: 6px;
+    box-shadow: 5px 5px 6px #333;
+    text-align: center;
+    padding: 20px 30px;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: .2s, linear;
+  }
+  .container__heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: #e3e3e3;
+    text-shadow: 0 0 10px black;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .container .container__box .box h3{
+    color: black;
+    font-size: 20px;
+    font-size: 23px;
+    font-weight: 600;
+  }
+  .container .container__box .box p{
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+    font-size: 18px;
+  }
+  .container .container__box .box a{
+    border-radius: 4px;
+    background:#444;
+    color: white;
+  }
+  .container .container__box .box a:hover{
+    background: #908080;
+  }
+  .box h3{
+    color: white;
+  }
+  header {
+    background-color: rgb(18, 6, 6);
+    padding: 10px 0;
+}
+
+header .company-name {
+    color: rgb(246, 242, 242);
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 80px;
+    justify-content: space-evenly;
+}
+
+nav ul li a, nav ul li button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+nav ul li button:hover, nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.company-name{
+  color: white;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: black;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 20px;
+}.carousel-item h5{
+  font-size: 28px;
+}
+.carousel-item .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+#lab_social_icon_footer {
+  padding: 40px 0;
+
+}
+
+#lab_social_icon_footer a {
+  color: #a09393;
+}
+/*
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  /*
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+  -moz-transform: scale(1.1); /* Firefox */
+  -o-transform: scale(1.1); /* Opera */
+  -ms-transform: scale(1.1); /* Internet Explorer 9 */
+  transform: scale(1.1); /* Standard property */
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8); /* Safari and Chrome */
+  -moz-transform: scale(0.8); /* Firefox */
+  -o-transform: scale(0.8); /* Opera */
+  -ms-transform: scale(0.8); /* Internet Explorer 9 */
+  transform: scale(0.8); /* Standard property */
+  
+  -webkit-transition-duration: 0.5s; /* Safari and Chrome */
+  -moz-transition-duration: 0.5s; /* Firefox */
+  -o-transition-duration: 0.5s; /* Opera */
+  transition-duration: 0.5s; /* Standard property */
+}
+
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #415b93;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
+}
+footer{
+  background-color: black;
+}

@@ -1,0 +1,328 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    background-color: #413d5e;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color:rgb(132, 132, 51);
+    
+}
+
+header h1 {
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+ p{
+    font-size: 18px;
+ }
+ 
+.image-placeholder,
+img {
+    background-color: #2e2e3b;
+    color: #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin: 1rem 0;
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#mission-values .values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.value-block {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+.value-block h3 {
+    margin-top: 0;
+}
+
+#expertise .expertise-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.expertise-block {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+.expertise-block h3 {
+    margin-top: 0;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin: 2rem 0;
+}
+
+.timeline-content {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    text-align: center;
+    margin: 1rem;
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.7rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+#cta {
+    text-align: center;
+    background-color: #695050;
+    padding: 2rem;
+}
+
+.cta-buttons a {
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+    margin: 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-buttons a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+}
+
+footer nav a {
+    color: #ccc;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    color: #007bff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+#sustainability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.image-left,
+.image-right {
+    width: calc(50% - 10px); /* Adjust as needed */
+}
+
+.image-left img,
+.image-right img {
+    width: 100%;
+    border-radius: 8px;
+}#lab_social_icon_footer {
+    padding: 40px 0;
+
+  }
+  
+  #lab_social_icon_footer a {
+    color: #a09393;
+  }
+  #lab_social_icon_footer .social:hover {
+    -webkit-transform: scale(1.1); /* Safari and Chrome */
+    -moz-transform: scale(1.1); /* Firefox */
+    -o-transform: scale(1.1); /* Opera */
+    -ms-transform: scale(1.1); /* Internet Explorer 9 */
+    transform: scale(1.1); /* Standard property */
+  }
+  
+  #lab_social_icon_footer .social {
+    -webkit-transform: scale(0.8); /* Safari and Chrome */
+    -moz-transform: scale(0.8); /* Firefox */
+    -o-transform: scale(0.8); /* Opera */
+    -ms-transform: scale(0.8); /* Internet Explorer 9 */
+    transform: scale(0.8); /* Standard property */
+    
+    -webkit-transition-duration: 0.5s; /* Safari and Chrome */
+    -moz-transition-duration: 0.5s; /* Firefox */
+    -o-transition-duration: 0.5s; /* Opera */
+    transition-duration: 0.5s; /* Standard property */
+  }
+  
+  /*
+      Multicoloured Hover Variations
+  */
+  
+  #lab_social_icon_footer #social-fb:hover {
+    color: #415b93;
+  }
+  
+  #lab_social_icon_footer #social-tw:hover {
+    color: #4099FF;
+  }
+  
+  #lab_social_icon_footer #social-gp:hover {
+    color: #d34836;
+  }
+  
+  #lab_social_icon_footer #social-em:hover {
+    color: #f39c12;
+  }
+
+
+  header {
+    background-color: rgb(73, 54, 54);
+    padding: 10px 0;
+}
+
+header .company-name {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a, nav ul li button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+nav ul li button:hover, nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: black;
+}

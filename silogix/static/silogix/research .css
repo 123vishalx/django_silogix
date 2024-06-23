@@ -1,0 +1,326 @@
+/* General Styles */
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #948ca7;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+header div{
+    font-size: 25px;
+}
+
+
+
+/* Expertise Styles */
+.expertise {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.expertise h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.expertise-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.expertise-item {
+    text-align: center;
+    width: 30%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.expertise-item img {
+    width: 340x;
+    height: 240px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+/* Innovation Styles */
+.innovation {
+    background-color: #e0e0e0;
+    padding: 50px 0;
+}
+
+.innovation h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.innovation-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.innovation-item {
+    text-align: center;
+    width: 30%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.innovation-item img {
+    width: 290px;
+    height: 250px;
+    margin-bottom: 20px;
+    border: 2.5px solid black;
+}
+
+/* Projects Styles */
+.projects {
+    background-color: #d0d0d0;
+    padding: 50px 0;
+    font-size: 24px;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-item {
+    text-align: center;
+    width: 30%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.project-item img {
+    width: 380px;
+    height: 270px;
+    margin-bottom: 20px;
+    border: 2.5px solid black;
+}
+
+/* Technology Highlights Styles */
+.technology-highlights {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    font-size: 21px;
+}
+
+.technology-highlights h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.highlights-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.highlight-item {
+    text-align: center;
+    width: 30%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.highlight-item img {
+    width: 290px;
+    height: 250px;
+    margin-bottom: 20px;
+    border: 2.5px solid black;
+}
+
+/* Partnerships Styles */
+.partnerships {
+    background-color: #e0e0e0;
+    padding: 50px 0;
+}
+
+.partnerships h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.partnerships-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.partnership-item {
+    text-align: center;
+    width: 30%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+.partnership-item img {
+    width: 150px;
+    height: 160px;
+    margin-bottom: 20px;
+    border: 2.7px solid black;
+}
+
+
+
+
+textarea {
+    resize: none;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+  background-color: #607883;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
+
+.rounded-social-buttons .social-button.github {
+  background: #000000;
+}
+
+.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+  color: #000000;
+  background: #fefefe;
+  border-color: #000000;
+} 
+.copy {
+    text-align: center;
+    background-color: #607883;
+}
