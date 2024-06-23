@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services Section with HTML and CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'silogix/service.css' %}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        
+        <nav>
+            <ul> 
+                <li><a href="{% url 'index4' %}" target="_blank">Home</a></li>
+                <li><a href="{% url 'about' %}" target="_blank">About Us</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li class="dropdown">
+                    <button>R&D</button>
+                    <div class="dropdown-content">
+                        <a href="{% url 'research' %}" target="_blank">Research</a>
+                        <a href="{% url 'research' %}" target="_blank">Development</a>
+                    </div>
+                    <li><a href="{% url 'contact' %}">Contacts</a></li>
+                </li>
+                
+                
+            </ul>
+            
+        </nav>
+        
+    </header>
+    <div class="container">
+        <h1 class="container__heading">Our Services</h1>
+        <div class="container__box">
+           <!-- CUSTOM LAYOUT DESIGN -->
+            <div class="box">
+                <h3>CUSTOM LAYOUT DESIGN</h3>
+                <p>Our custom layout design service delivers optimized performance..</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+           <!-- Standard Design Cell -->
+            <div class="box">
+                <h3>Standard Design Cell</h3>
+                <p>We provide a complete standard cell design and characterized solution for a wide variety.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+            <!-- Analytics and Optimization -->
+            <div class="box">
+                <h3>Analytics and Optimization</h3>
+                <p>Harnessing data-driven insights to continuously optimize your digital ecosystem.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+            <!-- Design and Development -->
+            <div class="box">
+                <h3>Design and Development</h3>
+                <p>Crafting intuitive, user-centric designs coupled with robust development .</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+            <!-- Embedded Systems Development -->
+            <div class="box">
+                <h3>Embedded Systems Development</h3>
+                <p>Tailored solutions for embedded software and firmware development, optimizing performance and reliability for diverse semiconductor applications.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+            <!-- Testing and Validation -->
+            <div class="box">
+                <h3>Testing and Validation</h3>
+                <p>Robust testing methodologies and validation frameworks to ensure the reliability, functionality, and compliance of semiconductor products with industry standards.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+            <!-- Technology Consulting -->
+            <div class="box">
+                <h3>Technology Consulting</h3>
+                <p>Strategic guidance on technology roadmap development, market analysis, and product differentiation to navigate the complex landscape of semiconductor innovation.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        
+        <div class="box">
+            <h3>Consultancy</h3>
+            <p>Strategic guidance on technology roadmap development, market analysis, and product differentiation to navigate the complex landscape of semiconductor innovation.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+          
+        <div class="box">
+            <h3>Guidance</h3>
+            <p>Strategic guidance on technology roadmap development, market analysis, and product differentiation to navigate the complex landscape of semiconductor innovation.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+</div>
+
+<div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="..."></path>
+                </svg>
+                <h5>Driving Vision</h5>
+                <p>Elevate your vision with Semiconductors.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="..."></path>
+                </svg>
+                <h5>Transforming Idea</h5>
+                <p>Experience the Differnce with semiconductors</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="..."></path>
+                </svg>
+                <h5>Cassette Replacement</h5>
+                <p>Replace worn cassettes for efficient gear shifts.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="..."></path>
+                </svg>
+                <h5>Market Research</h5>
+                <p>In-depth analysis to guide your business strategies.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="..."></path>
+                </svg>
+                <h5>Web Design</h5>
+                <p>Create stunning websites to impress your audience.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="..."></path>
+                </svg>
+                <h5>Digital Marketing</h5>
+                <p>Boost your online presence with strategic campaigns.</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#servicesCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<footer>
+   
+    <div class="social-media">
+        
+        <section id="lab_social_icon_footer">
+         <div class="fots">
+            <!-- Include Font Awesome Stylesheet in Header -->
+            <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+            <div class="container">
+                    <div class="text-center center-block">
+                            <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                            <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                </div>
+            </div>
+            </section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

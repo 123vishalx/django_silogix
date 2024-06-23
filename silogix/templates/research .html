@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research and Development | [Company Name]</title>
+    <link rel="stylesheet" href="{% static 'silogix/research.css' %}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index4' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'research' %}">Research and Development</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="company-name">Silogix Nanosystem</div>
+          
+        </div>
+    </header>
+
+    <!-- Expertise Section -->
+    <section class="expertise">
+        <h2>Our Expertise</h2>
+        <div class="expertise-grid">
+            <div class="expertise-item">
+                <img src="https://media.istockphoto.com/id/1569540497/photo/printed-circuit-board-with-advanced-processing-unit-electronic-devices-production-industry.jpg?s=2048x2048&w=is&k=20&c=FIRUxAPg68-Uhqw57jxhA4szy5j7ixGR-6SF_6GRbsQ=" alt="Expertise Icon 1">
+                <h3>Semiconductor Design</h3>
+                <p>Our team of experts has extensive experience in designing and developing cutting-edge semiconductor solutions.</p>
+            </div>
+            <div class="expertise-item">
+                <img src="https://media.istockphoto.com/id/1397047877/photo/main-microchip-on-the-motherboard.jpg?s=2048x2048&w=is&k=20&c=nXKFBiVdZmpOg8Y5BydTim3hbrrVI8AxsNlgvQXOflQ=" alt="Expertise Icon 2">
+                <h3>Microchip Fabrication</h3>
+                <p>We have a state-of-the-art fabrication facility that enables us to produce high-quality microchips with precision and accuracy.</p>
+            </div>
+            <div class="expertise-item">
+                <img src="https://media.istockphoto.com/id/1368145748/photo/man-hand-touching-virtual-screen-to-lms-learning-management-system-web-icon-for-lesson-and.webp?b=1&s=170667a&w=0&k=20&c=05NePCg7IBOLLpjzIQQuhzak6siIFPTNdMHolV9b-UM=" alt="Expertise Icon 3">
+                <h3>System Integration</h3>
+                <p>Our team has expertise in integrating semiconductor solutions into complex systems, ensuring seamless functionality and performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section class="innovation">
+        <h2>Innovation in Action</h2>
+        <div class="innovation-grid">
+            <div class="innovation-item">
+                <img src="https://media.istockphoto.com/id/1682627981/photo/circular-motion-of-abstract-neon-particles.webp?b=1&s=170667a&w=0&k=20&c=YwaRN8VSVST3kb2i4dX6mVhjfNZcPB5kGIdHIGKCGVo=" alt="Innovation Image 1">
+                <h3>AI-Powered Semiconductor Design</h3>
+                <p>Our researchers are exploring the use of AI and machine learning to optimize semiconductor design and development.</p>
+            </div>
+            <div class="innovation-item">
+                <img src="https://media.istockphoto.com/id/1220136527/photo/close-up-gloved-hands-holding-detail-microchip.webp?b=1&s=170667a&w=0&k=20&c=ZAo-t8kxf7tNfxIKONeMKnUQKyV4fwQL-BKs7I9i6Z0=" alt="Innovation Image 2">
+                <h3>Quantum Computing Applications</h3>
+                <p>We are investigating the potential of quantum computing to revolutionize the semiconductor industry.</p>
+            </div>
+            <div class="innovation-item">
+                <img src="https://media.istockphoto.com/id/1043302218/photo/5g-wifi-technology-digital-concept.webp?b=1&s=170667a&w=0&k=20&c=md-ZSnDaT6zjKoEX8VGR97i6Db_7qTaEbLF67HTAuwU=" alt="Innovation Image 3">
+                <h3>5G and Beyond</h3>
+                <p>Our team is working on developing semiconductor solutions that enable the next generation of wireless communication technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Current Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="https://media.istockphoto.com/id/1325136467/photo/the-computer-circuit-board-and-fast-moving-cars-a-hand-holding-a-cpu-chipset.webp?b=1&s=170667a&w=0&k=20&c=kz64HOi8SCFoMNI-ZaBC_jYqtt8ZF9PnldlB7xyqAYM=" alt="Project Image 1">
+                <h3>Project Aurora</h3>
+                <p>A next-generation semiconductor solution for autonomous vehicles.</p>
+            </div>
+            <div class="project-item">
+                <img src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFpfGVufDB8fDB8fHww" alt="Project Image 2">
+                <h3>Project Nova</h3>
+                <p>A high-performance microchip for artificial intelligence applications.</p>
+            </div>
+            <div class="project-item">
+                <img src="https://media.istockphoto.com/id/1434430575/photo/5g-wireless-communication-network-remote-area.webp?b=1&s=170667a&w=0&k=20&c=iSk4oflv61txsKxtDg6Wm3hXcF_1I4t6JamNX0tlSss=" alt="Project Image 3">
+                <h3>Project Apex</h3>
+                <p>A cutting-edge semiconductor solution for 5G wireless communication.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Highlights Section -->
+    <section class="technology-highlights">
+        <h2>Technology Highlights</h2>
+        <div class="highlights-grid">
+            <div class="highlight-item">
+                <img src="https://images.unsplash.com/photo-1540829917886-91ab031b1764?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmFub3RlY2hub2xvZ3klMjBjaGlwfGVufDB8fDB8fHww" alt="Highlight Image 1">
+                <h3>Breakthrough in Nanotechnology</h3>
+                <p>Discover our latest advancements in nanotechnology that are setting new standards in the industry.</p>
+            </div>
+            <div class="highlight-item">
+                <img src="https://media.istockphoto.com/id/1210738055/photo/computer-education-training-class.webp?b=1&s=170667a&w=0&k=20&c=kVfddZfD4X6lZd5h4N2TnLce_sJiIfiQ2TNPnrMsaU0=" alt="Highlight Image 2">
+                <h3>Advanced Material Research</h3>
+                <p>Our research in advanced materials is paving the way for more efficient and powerful semiconductor devices.</p>
+            </div>
+            <div class="highlight-item">
+                <img src="https://media.istockphoto.com/id/1193095471/photo/computer-glowing-futuristic-cpu-processor-concept.webp?b=1&s=170667a&w=0&k=20&c=Tf12tQFBLPeSrCjIiWQQXy3PbXaB-rX4cfLCOlc3dD4=" alt="Highlight Image 3">
+                <h3>Innovative Power Solutions</h3>
+                <p>Learn about our innovative solutions to improve power efficiency in semiconductor technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section class="partnerships">
+        <h2>Our Partnerships</h2>
+        <div class="partnerships-grid">
+            <div class="partnership-item">
+                <img src="https://plus.unsplash.com/premium_photo-1700495922514-7cb4f692cd72?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcGFueSUyMGxvZ298ZW58MHx8MHx8fDE%3D" alt="Partner Logo 1">
+                <h3>TechCorp</h3>
+                <p>Collaborating with TechCorp to pioneer the next generation of semiconductor technology.</p>
+            </div>
+            <div class="partnership-item">
+                <img src="https://plus.unsplash.com/premium_photo-1700520223874-f7acf744d15d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXBhbnklMjBsb2dvfGVufDB8fDB8fHwx" alt="Partner Logo 2">
+                <h3>InnovateX</h3>
+                <p>Partnering with InnovateX to drive innovation in AI and quantum computing applications.</p>
+            </div>
+            <div class="partnership-item">
+                <img src="https://images.unsplash.com/photo-1622465911368-72162f8da3e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbXBhbnklMjBsb2dvfGVufDB8fDB8fHww" alt="Partner Logo 3">
+                <h3>FutureTech</h3>
+                <p>Working with FutureTech to develop cutting-edge solutions for 5G and beyond.</p>
+            </div>
+        </div>
+    </section>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+
+<footer>
+  <div class="rounded-social-buttons">
+                    <a class="social-button twitter" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/channel/UCcC2H4m9G6_nEvpNQfGPESQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a class="social-button github" href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+
+                </div>
+<div class="copy" >&copy; 2024 Your Company Name. All rights reserved.
+                  </div>
+
+</footer>
+
+
+      
+      
+      
+</body>
+</html>

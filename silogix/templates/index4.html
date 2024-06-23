@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silogix Nanosystems</title>
+    <link rel="stylesheet" href="{% static 'silogix/fot.css' %}">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   
+    <header>
+        <div class="company-name">Silogix</div>
+        <nav>
+            <ul>
+                <li><button onclick="scrollToSection('feature');">Home</button></li>
+                <li><a href="{% url 'about' %}" target="_blank">About Us</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li class="dropdown">
+                    <button>R&D</button>
+                    <div class="dropdown-content">
+                        <a href="{% url 'research' %}" >Research</a>
+                        <a href="{% url 'research' %}" target="_blank">Development</a>
+                    </div>
+                </li>
+                <li><a href="{% url 'contact' %}">Contacts</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Silogix Nanosystems</h1>
+            <p>We specialize in cutting-edge semiconductor solutions.</p>
+            <a href="{% url 'services' %}" class="btn">Explore Product</a>
+        </div>
+    </section>
+
+    <section id="feature">
+   <section class="features">
+        <div class="container">
+            <div class="feature">
+                <i class="fas fa-cog"></i>
+                <h2>Advanced Technology</h2>
+                <p>Our semiconductor products utilize the latest advancements in nanotechnology to deliver unparalleled performance.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-bolt"></i>
+                <h2>High Efficiency</h2>
+                <p>Experience increased energy efficiency and reduced power consumption with our cutting-edge semiconductor solutions.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h2>Reliability</h2>
+                <p>Our products undergo rigorous testing to ensure reliability, durability, and long-term performance in demanding environments.</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <section class="product-showcase">
+        <div class="container">
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/1472343103/photo/load-testing-text-on-computer-printed-circuit-board.jpg?s=2048x2048&w=is&k=20&c=LqmCMjdi-_CH-AlcqBUzYv2Cpl9fV-8OFFcwIhZsm5w=" alt="Product 1">
+                <h3>Microprocessor Chip</h3>
+                <p>Description of Product 1.</p>
+                <a href="{% url 'product1' %}" class="btn">learn more</a>
+            </div>
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/1448843955/photo/3d-illustration-of-a-glowing-cpu-installed-on-a-generic-mainboard.jpg?s=2048x2048&w=is&k=20&c=d4c75LzZ4ZWZJiZtI3619yTeN8V8uvavBJHnBehLTp4=" alt="Product 2">
+                <h3>Analog Chips</h3>
+                <p>Description of Product 2.</p>
+                <a href="{% url 'product2' %}" class="btn">learn more</a>
+            </div>
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/1818195709/photo/futuristic-cpu-and-digital-data-flowing-ai-and-cybersecurity-concept.jpg?s=2048x2048&w=is&k=20&c=KXJVg9_2bCCztEmQ3a2Y6dunngOvtUzWUsxGJC4NVn4=" alt="Product 3">
+                <h3>Product Name 3</h3>
+                <p>Description of Product 3.</p>
+                <a href="{% url 'product3' %}" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Silogix Nanosystems</h2>
+                    <p>Silogix Nanosystems is a leading provider of innovative semiconductor solutions. With a focus on nanotechnology and cutting-edge research, we strive to revolutionize the electronics industry. Our team of experts is dedicated to pushing the boundaries of semiconductor technology, delivering products that are efficient, reliable, and tailored to meet the needs of our customers. Founded in 20XX, Silogix Nanosystems has quickly established itself as a trusted partner for businesses seeking high-performance semiconductor solutions. We are committed to driving innovation and shaping the future of electronics.</p>
+                </div>
+                <div class="about-images">
+                    <img src="https://media.istockphoto.com/id/1204723065/photo/fingerprint-login.jpg?s=2048x2048&w=is&k=20&c=UgJEiKg7RW6p9oW5kizkGPN-wdlSrQCwTL2XXpdIo5s=" alt="Silogix Nanosystems Image 1">
+                    <img src="https://media.istockphoto.com/id/1443578917/photo/cpu-5g-circuit-board-cloud-computing.jpg?s=2048x2048&w=is&k=20&c=Ng0SBZ8lJTokbaIrhvCkP8Uv23f2pIYR0OegjecCaMU=" alt="Silogix Nanosystems Image 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section style="background-color: aliceblue;height: 300px;">
+        <h2 style="display: block; margin-left:600px; font-size: 34px;">What Our Customers Say</h2>
+<div style="display: flex;  margin-top: 30px;margin-left: 20px;">
+    <h2>
+        <p style="font-size: 20px;">"Silogix Nanosystems' semiconductor solutions have transformed our business. Their products are reliable, efficient, and perfectly suited to our needs."</p>
+                <cite style="font-weight: bold;">John Doe, CEO of XYZ Corp</cite>
+    </h2>
+    <h2 >
+        <p style="font-size: 20px;">"We've been using Silogix Nanosystems' products for years, and we couldn't be happier. Their customer service is exceptional, and their technology is top-notch."</p>
+        <cite style="font-weight: bold;">Jane Smith, CTO of ABC Inc</cite>
+    </h2>
+</div>
+
+    </section>
+    
+
+  
+    <section class="contact" style="background: rgb(55,72,166);
+    background: linear-gradient(90deg, rgba(55,72,166,1) 34%, rgba(189,107,180,1) 73%); height: 200px;">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to get in touch with us. We're here to help!</p>
+          
+        </div> 
+       
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <h3>Silogix Nanosystems</h3>
+                <p>A leading provider of innovative semiconductor solutions.</p>
+            </div>
+            
+               
+    </footer>
+
+    <div id="footer" >
+        <div id="footer1" style="font-weight: bold; margin:  20px 30px; font-size: 22px;">Silogix</div>
+
+        <div id="footer2" style="margin: 60px 50px; color: aliceblue; width: 38%;">
+            <h1>Silogix Nanosystems(OPC) Pvt. Ltd.</h1>
+            <h2>205, PrakruthiAkshara, 3rd Cross Road
+                Dr. Shivaramkaranth Nagar, RK Hedge Nagar
+                Bengaluru, 560077, Karnataka, India</h2>
+                <h2>CIN: U62010KA2024OPC184666</h2>
+                <h2 style="margin-top: 20px;">Tel: +91 8040998499</h2>
+                <h2>  Email: info@silogixnano.com</h2>
+                <div style="margin-top: 20px; display: flex;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png" alt="" style="width: 20px;">
+                    <img src="https://cdn-teams-slug.flaticon.com/google.jpg" alt="" style="width: 20px; margin-left: 15px;">
+                    <img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png" alt="" style="width: 20px;margin-left: 15px">
+                   
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="" style="width: 20px; margin-left: 15px">
+                </div>
+        </div>
+
+        <div id="footer3">
+        <div style="margin: 60px 90px;background-color: aliceblue; height: 130px; border-radius: 10px; padding: 20px;">
+            <h1 style="font-weight: bold;">Stay in the know</h1>
+            <h2>Sign up to hear more about what we're thinking.</h2>
+            <button style="background-color: blueviolet;border-radius: 3px;width: 60px; padding: auto;margin-top: 10px;">Sign Up</button>
+        </div>
+        <div style="margin-left: 90px;margin-top: -30px;">
+            <h1 style="font-weight: bold;">Join our newsletter</h1>
+            <h2>We'll send you a nice letter once per week. No spam. </h2>
+
+
+
+    </div>
+</div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+    
+</body>
+</html>

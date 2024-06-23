@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'silogix/contact.css' %}">
+</head>
+<body>
+	<header>
+        <div class="company-name">Silogix</div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index4' %}" target="_blank">Home</a>
+                <li><a href="{% url 'about' %}" target="_blank">About Us</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li class="dropdown">
+                    <button>R&D</button>
+                    <div class="dropdown-content">
+                        <a href="{% url 'research' %}" target="_blank">Research</a>
+                        <a href="{% url 'research' %}" target="_blank">Development</a>
+                    </div>
+                </li>
+                <li><a href="{% url 'contact' %}">Contacts</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+	<div class="container">
+		<div class="text-center">
+			<h1>Contact Us</h1>
+			<div>
+				For inquiries about our research, partnerships, or any other questions, please reach out to our dedicated team. <div>We are here to assist you with any information or support you may need.
+</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="col-1">
+				<div class="address-line">
+				
+					<div class="contact-info">
+						<div class="contact-info-title">Address</div>
+						<div>+91 8040998499</div>
+						<div>Dr. Shivaramkaranth Nagar, RK Hedge Nagar
+                        </div>
+                        <div>Bengaluru, 560077, Karnataka, India</div>
+						<div>CIN: U62010KA2024OPC184666</div>
+					</div>
+				</div>
+				<div class="address-line">
+					
+					<div class="contact-info">
+						<div class="contact-info-title">Phone</div>
+						<div>Tel: +91 8040998499</div>
+					</div>
+				</div>
+				<div class="address-line">
+				
+					<div class="contact-info">
+						<div class="contact-info-title">Email</div>
+						<div>Email: info@silogixnano.com</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<form>
+					<div class="form-container">
+						<h2>Send Message</h2>
+						<div class="form-row">
+							<label>Full Name</label>
+							<div>
+								<input type="text" class="form-field">
+							</div>
+						</div>
+						<div class="form-row">
+							<label>Email</label>
+							<div>
+								<input type="text" class="form-field">
+							</div>
+						</div>
+						<div class="form-row">
+							<label>Type your message...</label>
+							<div>
+								<input type="text" class="form-field">
+							</div>
+						</div>
+						<input type="button" class="send-btn" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+		</div>
+		</section>
+		
+</body>
+</html>
