@@ -14,19 +14,31 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path
 from silogix import views
+from silogix.views import contact_view, register, user_login
+from django.contrib.auth.views import LogoutView
+from django.urls import path, include
+from silogix.views import contact_view, success_view
+ 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+  
     path('', views.home, name='index4'),
     path('about1/', views.about, name='about'),
-    path('contact/', views.contact, name='contact'),
     path('product/', views.product, name='product1'),
     path('product2/', views.product2, name='product2'),
     path('product3/', views.product3, name='product3'),
     path('research/', views.research, name='research'),
     path('services/', views.services, name='services'),
+    path('contact/', contact_view, name='contact'),
+    path('register/', register, name='register'),
+    path('login/', user_login, name='login'),
+    path('logout/', LogoutView.as_view(), name='logout'),
+    path('contact/', contact_view, name='contact'),
+    path('success/', success_view, name='success'),
 ]
